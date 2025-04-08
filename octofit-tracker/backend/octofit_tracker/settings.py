@@ -25,7 +25,8 @@ SECRET_KEY = "django-insecure-fmj@8&(u!(1utslaudbn=7jau7(p!^vs7i606su*b89kbi^yfy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+# Allow host access to Codespace URL and localhost
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev']
 
 
 # Application definition
@@ -77,7 +78,6 @@ WSGI_APPLICATION = "octofit_tracker.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-# MongoDB database configuration
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
