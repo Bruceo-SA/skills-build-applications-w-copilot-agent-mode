@@ -1,9 +1,10 @@
 /* General styles */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #e6f7ff; /* Light cyan background */
+  background-color: #f0f8ff; /* Light blue background */
   margin: 0;
   padding: 0;
+  color: #333333; /* Dark gray text */
 }
 
 .App {
@@ -119,6 +120,17 @@ button:hover {
   background-color: #0059b3; /* Slightly lighter blue */
 }
 
+/* Link styles */
+a {
+  color: #004d99; /* Dark blue */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffcc00; /* Gold */
+  text-decoration: underline;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -152,4 +164,17 @@ button:hover {
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Logo styles */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
 }
