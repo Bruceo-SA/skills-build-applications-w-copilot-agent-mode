@@ -19,9 +19,9 @@ function Leaderboard() {
 
   return (
     <div>
-      <h1 className="display-4">Leaderboard</h1>
-      <table className="table table-bordered">
-        <thead>
+      <h1 className="display-4 text-center">Leaderboard</h1>
+      <table className="table table-bordered table-hover">
+        <thead className="table-dark">
           <tr>
             <th>Username</th>
             <th>Score</th>

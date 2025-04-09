@@ -19,12 +19,20 @@ function Workouts() {
 
   return (
     <div>
-      <h1 className="display-4">Workouts</h1>
-      <ul className="list-group">
+      <h1 className="display-4 text-center">Workouts</h1>
+      <div className="row">
         {workouts.map((workout, index) => (
-          <li key={index} className="list-group-item">{workout.name}</li>
+          <div key={index} className="col-md-4">
+            <div className="card mb-4">
+              <div className="card-body">
+                <h5 className="card-title">{workout.name}</h5>
+                <p className="card-text">{workout.description}</p>
+                <button className="btn btn-primary">Start Workout</button>
+              </div>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

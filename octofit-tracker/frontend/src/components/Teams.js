@@ -19,7 +19,7 @@ function Teams() {
 
   return (
     <div>
-      <h1 className="display-4">Teams</h1>
+      <h1 className="display-4 text-center">Teams</h1>
       <ul className="list-group">
         {teams.map((team, index) => (
           <li key={index} className="list-group-item">{team.name}</li>

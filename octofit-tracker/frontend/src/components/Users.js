@@ -19,9 +19,9 @@ function Users() {
 
   return (
     <div>
-      <h1 className="display-4">Users</h1>
+      <h1 className="display-4 text-center">Users</h1>
       <table className="table table-hover">
-        <thead>
+        <thead className="table-dark">
           <tr>
             <th>Username</th>
             <th>Email</th>
