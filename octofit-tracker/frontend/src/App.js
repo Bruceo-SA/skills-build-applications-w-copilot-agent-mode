@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">OctoFit Tracker</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@ function App() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/activities">Activities</Link>
+                  <Link className="nav-link active" aria-current="page" to="/activities">Activities</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/leaderboard">Leaderboard</Link>
